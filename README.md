@@ -75,7 +75,7 @@ Then simply run `wordtest3.exe` — that’s it!
 * To exit editing mode in a cell, press **ESC**.  
 * When *not* in editing mode, pressing **Ctrl + Backspace** or **Delete** will remove the selected row.  
 * Once you're done, click "Save" to finish editing.  
-* If you're using AI, just ask it to generate a CSV in the format: `number | word | meaning`,  
+* If you're using AI, just ask it to generate a CSV in the format: `number|word|meaning`,  
   copy it, and paste it into the program — your word list table will be ready instantly!  
 
 **2. Listening to Pronunciations → Click a Cell!**  
