@@ -23,9 +23,6 @@ wordtest3.exe, ffmpeg.exe, ffprobe.exe를 모두 다운 받고
 한 폴더 안에 넣어두세요.  
 그리고 wordtest3.exe를 실행하기만 하면 끝!  
 
----
-
-  
 주요기능  
 1.단어 등록하기 -> 편집버튼으로!  
 컨트롤 엔터를 누르면 행이 추가됩니다.  
@@ -40,6 +37,8 @@ AI를 활용한다면 번호|단어|뜻 형식의 csv를 생성해달라고 한 
 3. 시험치기 -> 연습, 시험, 거꾸로시험, 음성시험, 거꾸로음성, 받아쓰기  
 총 6개의 시험모드로 단어를 테스트해보세요.  
 보지않고 답하는 것이 외국어로 말하기 첫단계입니다. 열심히 연습해서 언어를 익혀봅시다!  
+
+---
 
 English-  
 Hello! I'm Oejeossi.  
@@ -64,8 +63,6 @@ Study hard and be happy!
 Download the following three files: `wordtest3.exe`, `ffmpeg.exe`, and `ffprobe.exe`.  
 Place them all in the same folder.  
 Then simply run `wordtest3.exe` — that’s it!  
-
----
 
 **Main Features**  
 
