@@ -1,0 +1,27 @@
+{
+    "show_all_words": true,
+    "only_incorrects": false,
+    "only_low_rates": false,
+    "rate_filter": "100%",
+    "test_type": "Random",
+    "play_type": "Descending",
+    "learn_language": "el",
+    "base_language": "ko",
+    "pitch": "normal",
+    "volume": "100",
+    "theme": "Choco",
+    "word_font_size": 38,
+    "meaning_font_size": 38,
+    "table_font_size": 12,
+    "txtWordInput_height": 78,
+    "txtMeaningInput_height": 78,
+    "user_language": "한국어",
+    "gridLayout_padding": [
+        11,
+        11,
+        11,
+        11
+    ],
+    "font_setting": "맑은 고딕",
+    "font_setting_tolearn": "Arial Black"
+}

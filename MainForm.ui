@@ -1,0 +1,1409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1279</width>
+    <height>878</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>돋움</family>
+          <pointsize>28</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>문제</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>돋움</family>
+          <pointsize>28</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>답</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPlainTextEdit" name="txtMeaningInput">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>65</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>65</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>굴림</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="lineWrapMode">
+         <enum>QPlainTextEdit::NoWrap</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QPlainTextEdit" name="txtWordInput">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>65</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>굴림</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QAbstractScrollArea::AdjustIgnored</enum>
+        </property>
+        <property name="lineWrapMode">
+         <enum>QPlainTextEdit::NoWrap</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="btnDeleteAudios">
+        <property name="minimumSize">
+         <size>
+          <width>85</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>85</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>mp3폴더에 있는 파일들을 삭제합니다.</string>
+        </property>
+        <property name="text">
+         <string>음성파일 삭제</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="value">
+         <number>24</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAudioEdit">
+        <property name="minimumSize">
+         <size>
+          <width>65</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>65</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>녹음한 mp3파일을 편집합니다.</string>
+        </property>
+        <property name="text">
+         <string>mp3편집</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRecord">
+        <property name="minimumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>녹음을 시작합니다. 
+장치를 선택하고 확인을 누르면 녹음이 바로 시작됩니다. 
+영상을 정지시켜두고 녹음준비를 하세요.</string>
+        </property>
+        <property name="text">
+         <string>녹음</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnMakeAudios">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>단어장에 있는 모든 단어의 mp3 파일을 생성합니다. 
+ 미리 해두시면 시험에서 진행이 원활해집니다.</string>
+        </property>
+        <property name="text">
+         <string>음성파일 만들기</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAutoPlay">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>표의 단어들을 자동으로 재생합니다. 
+ 흘려듣기를 하고 싶다면 실행하세요.</string>
+        </property>
+        <property name="text">
+         <string>자동재생</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cbbPlayType">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>자동재생 방식을 지정하세요.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="chbToReadMeaning">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>자동재생시 뜻도 같이 읽습니다.</string>
+        </property>
+        <property name="text">
+         <string>뜻도 읽기</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>텀:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txtAutoAudioDuration">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>자동재생의 텀을 지정하세요. 
+숫자만 쓰세요.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_14">
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>초</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>피치 조절</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="slbPitchControler">
+        <property name="minimumSize">
+         <size>
+          <width>125</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txtPitchControler">
+        <property name="minimumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>피치를 낮게 조절하면 목소리가 두꺼워지고 높게 조절하면 얇아집니다.</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>속도 조절</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="slbSpeedControler">
+        <property name="minimumSize">
+         <size>
+          <width>125</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txtSpeedControler">
+        <property name="minimumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>속도를 조절하여 발음을 천천히 들어보거나 음성 시험의 난이도를 높여보세요.</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cbbPitchPreset">
+        <property name="toolTip">
+         <string>피치와 속도값을 지정합니다.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="9">
+       <widget class="QComboBox" name="cbbLangToLearn">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>배우고싶은 단어를 지정하세요.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" rowspan="2">
+       <widget class="QPushButton" name="btnTextTestWtoM">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>텍스트 시험을 봅니다. 
+단어를 보고 뜻을 쓰세요.</string>
+        </property>
+        <property name="text">
+         <string>시험</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QLabel" name="label_5">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>시험순서</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="2">
+       <widget class="QPushButton" name="btnEdit">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>단어파일을 편집합니다. 
+단어를 추가하거나 제거하세요.</string>
+        </property>
+        <property name="text">
+         <string>편집</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="8">
+       <widget class="QLabel" name="label_7">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>기본언어</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4" rowspan="2">
+       <widget class="QPushButton" name="btnAudioTestWtoM">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>음성 시험을 봅니다. 
+단어를 듣고 뜻을 쓰세요.</string>
+        </property>
+        <property name="text">
+         <string>음성시험</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="8">
+       <widget class="QLabel" name="label_6">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>학습언어</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <widget class="QComboBox" name="cbbTestType">
+        <property name="toolTip">
+         <string>시험 순서를 지정해보세요. 
+ 표 기준으로 위로 또는 아래로 또는 무작위로 시험을 진행하세요.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5" rowspan="2">
+       <widget class="QPushButton" name="btnAudioTestMtoW">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>음성 시험을 봅니다.
+ 뜻을 듣고 단어 원어를 쓰세요.</string>
+        </property>
+        <property name="text">
+         <string>거꾸로음성</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="9">
+       <widget class="QComboBox" name="cbbBaseLang">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>모국어 또는 제2 사용언어를 선택하세요.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" rowspan="2">
+       <widget class="QPushButton" name="btnPractice">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>연습모드는 표가 사라지지 않는 오픈북형식의 연습입니다. 
+ 연습모드의 정답/오답은 정답률에 반영되지 않습니다.</string>
+        </property>
+        <property name="text">
+         <string>연습</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6" rowspan="2">
+       <widget class="QPushButton" name="btnAudioTestDictation">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>음성 시험을 봅니다.
+원어를 듣고 원어를 쓰세요.</string>
+        </property>
+        <property name="text">
+         <string>받아쓰기</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" rowspan="2">
+       <widget class="QPushButton" name="btnTextTestMtoW">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>55</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>텍스트 시험을 봅니다. 
+뜻을 보고 원어를 쓰세요.</string>
+        </property>
+        <property name="text">
+         <string>거꾸로시험</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="11">
+       <widget class="QPushButton" name="btn_browser">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>현재 선택된 단어로 구글 검색을 해보세요. 
+ 검색창이 열립니다. 
+(단축키 F10)</string>
+        </property>
+        <property name="text">
+         <string>현재 단어 검색</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="11">
+       <widget class="QPushButton" name="btnDeleteScores">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>번호, 단어, 뜻을 제외한 시험 결과를 전부 삭제합니다.</string>
+        </property>
+        <property name="text">
+         <string>기록삭제</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QPushButton" name="btnAlignCellsWidth">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>표 넓이를 자동으로 정렬합니다.</string>
+        </property>
+        <property name="text">
+         <string>표너비정렬</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnAutoInputNumbers">
+        <property name="minimumSize">
+         <size>
+          <width>85</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>85</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>편집시 번호를 한 번에 입력합니다.</string>
+        </property>
+        <property name="text">
+         <string>번호자동입력</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="minimumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>단어 파일</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cbbWordFile">
+        <property name="toolTip">
+         <string>단어파일을 고를 수 있습니다. 
+휠로 빠르게 선택해보세요. 
+프로그램 시작시 자동으로 시험을 본지 가장 오래된 파일을 불러옵니다.</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnRefreshWordList">
+        <property name="minimumSize">
+         <size>
+          <width>85</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>85</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>새로 추가한 파일이 있다면 이 버튼을 눌러서 파일을 목록에 추가하세요.</string>
+        </property>
+        <property name="text">
+         <string>목록새로고침</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnDeleteWordFile">
+        <property name="minimumSize">
+         <size>
+          <width>85</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>85</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>현재 선택중인 파일을 삭제합니다. 될 수 있으면 삭제하지 말고 보관해서 나중에 또 시험을 진행해보세요.</string>
+        </property>
+        <property name="text">
+         <string>단어파일삭제</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="minimumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>시험모드</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="chbAllWords">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>시험 시 모든 단어를 테스트합니다.</string>
+        </property>
+        <property name="text">
+         <string>모든 단어</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="chbOnlyIncorrects">
+        <property name="minimumSize">
+         <size>
+          <width>65</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>65</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>시험 시 이전 시험의 오답문제만을 테스트 합니다.</string>
+        </property>
+        <property name="text">
+         <string>오답만</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="chbOnlyLowRates">
+        <property name="minimumSize">
+         <size>
+          <width>65</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>65</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>시험 시 지정한 정답률 이하의 단어만 시험을 봅니다.</string>
+        </property>
+        <property name="text">
+         <string>정답률</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cbbRateFilter">
+        <property name="minimumSize">
+         <size>
+          <width>45</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>25</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="minimumSize">
+         <size>
+          <width>45</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>45</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>이하만</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="5" column="0" rowspan="2" colspan="2">
+     <widget class="QTableWidget" name="tbWordList">
+      <property name="minimumSize">
+       <size>
+        <width>1200</width>
+        <height>500</height>
+       </size>
+      </property>
+      <column>
+       <property name="text">
+        <string>번호</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>단어</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>뜻</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>오답비교</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>정답횟수</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>정답률</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>최근소요시간</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>최단소요시간</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>방금시험채점</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>마지막시험일시</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="4" column="1">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="lbWordsCounter">
+        <property name="minimumSize">
+         <size>
+          <width>550</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>550</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>돋움</family>
+          <pointsize>48</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>남은 갯수: N/N</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLabel" name="lbTimer">
+        <property name="minimumSize">
+         <size>
+          <width>550</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>550</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>돋움</family>
+          <pointsize>48</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>00:00:00.000</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="0">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="0">
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="2">
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="lbThreeCount">
+        <property name="minimumSize">
+         <size>
+          <width>550</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>550</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>돋움</family>
+          <pointsize>48</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Count</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>컬러테마:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rdbBasic">
+        <property name="text">
+         <string>기본테마</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rdbDark">
+        <property name="text">
+         <string>다크테마</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rdbCyan">
+        <property name="text">
+         <string>사이안테마</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rdbPink">
+        <property name="text">
+         <string>핑크테마</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rdbBlue">
+        <property name="text">
+         <string>블루테마</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>볼륨:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="slbVolume">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="txtVolume">
+        <property name="minimumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>55</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>볼륨값을 입력하세요.</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbLastTest">
+        <property name="minimumSize">
+         <size>
+          <width>120</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>125</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>마지막시험 n일 지남</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnPrintWords">
+        <property name="toolTip">
+         <string>표의 단어와 뜻을 출력합니다. 
+밖에서도 단어를 확인할 수 있습니다.</string>
+        </property>
+        <property name="text">
+         <string>단어출력</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>

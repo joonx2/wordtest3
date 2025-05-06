@@ -1,0 +1,29 @@
+# 가상환경
+venv/
+
+# PyInstaller 빌드 폴더
+build/
+dist/
+
+# 캐시
+__pycache__/
+*.py[cod]
+
+# 로그 및 시스템 파일
+*.log
+.DS_Store
+Thumbs.db
+
+# 실행파일, DLL, 객체파일
+*.exe
+*.dll
+*.obj
+*.so
+
+# mp3 등 생성되는 오디오
+mp3/
+
+# 기타
+*.pyd
+*.spec
+WaveFormDX.py
