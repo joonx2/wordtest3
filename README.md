@@ -19,7 +19,7 @@
 인증서가 없으므로 윈도우 디펜더나 백신프로그램에서 경고 가능성 있음.  
   
 다운 및 실행-  
-우측의 realses의 wordtest3 v1.0을 클릭 후
+우측의 realses의 wordtest3 1.0을 클릭 후
 `wordtest3.exe`, `ffmpeg.exe`, `ffprobe.exe`를 모두 다운 받고  
 한 폴더 안에 넣어두세요.  
 그리고 `wordtest3.exe`를 실행하기만 하면 끝!  
@@ -63,6 +63,7 @@ Study hard and be happy!
 * Since there is no digital certificate, Windows Defender or antivirus software may display a warning.  
 
 **Download & Run**  
+You can see wordtest3 1.0 releases on the right tab, click it.
 Download the following three files: `wordtest3.exe`, `ffmpeg.exe`, and `ffprobe.exe`.  
 Place them all in the same folder.  
 Then simply run `wordtest3.exe` — that’s it!  
